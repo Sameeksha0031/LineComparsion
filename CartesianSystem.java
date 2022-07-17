@@ -47,13 +47,25 @@ public class CartesianSystem {
 	    	  System.out.println("Lines are not equal");
 	      }
 	    
+	 if(result1.compareTo(result2) == 0) {   
+	        
+	      System.out.println("Line are equal");	
+	      
+	  }else if(result1.compareTo(result2) == -1) {
+		
+		System.out.println("Line 1 is Smaller than line 2");   // -1 for less
+		
+      }else{
+		
+		System.out.println("Line 1 is greater than line 2");   // 1 for greater
+	  }
+	
 	 
 	}
 	
 	 public double Calculate_length(double x1,double y1,double x2, double y2){
 		 double len;
 		 len=Math.sqrt((Math.pow(x2-x1,2)) + Math.pow(y2-y1,2));
-		 System.out.println("calculated length:" + len);
 	 return len;
 	 }
 }  
